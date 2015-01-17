@@ -13,7 +13,7 @@ Em uma arena, verificar se personagens presentes na arena estão próximos para 
 * Braun
 * Alison Ribeiro
 * Alvaro
-* Luan 
+* Luan (Coringa)
 * Henrique
 * Glayson
 * Jonatan Waldow
