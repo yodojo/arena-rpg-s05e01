@@ -1,4 +1,4 @@
-# Coding Dojo s05e01 [![Build Status](https://travis-ci.org/gpedro/arena-rpg-s05e01.svg)](https://travis-ci.org/gpedro/arena-rpg-s05e01)
+# Coding Dojo s05e01 [![Build Status](https://travis-ci.org/yodojo/arena-rpg-s05e01.svg)](https://travis-ci.org/yodojo/arena-rpg-s05e01)
 
 ### Problema: Combate na arena (RPG)
 
