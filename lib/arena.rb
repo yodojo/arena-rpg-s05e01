@@ -3,14 +3,14 @@ class Arena
 	def initialize(width, height)
 		@width = width
 		@height = height
-		@area = [0..@width][0..@height]
+		@area = [1..@width][1..@height]
 		@personagens = []
 	end
 
 	def em_combate?(personagem_1, personagem_2)
 		distancia = self.distancia(personagem_1,personagem_2)
 		maior_distancia = [personagem_1.arma.distancia, personagem_2.arma.distancia].max
-		(distancia(personagem_1,personagem_2) < maior_distancia) ? true : false
+		(distancia(personagem_1,personagem_2) < maior_distancia)
 	end
 
 	def distancia(personagem_1,personagem_2)
@@ -25,9 +25,22 @@ class Arena
 		personagem.y = y
 	end
 
-	def mover(personagem, x, y)
-		personagem = personagem
-		personagem.x = x
-		personagem.y = y
+	def dentro_arena?(x, y)
+		x.between? 1, @width and y.between? 1, @height
 	end
+
+	def na_arena?(personagem)
+		self.dentro_arena? personagem.x, personagem.y
+	end
+
+	def mover(personagem, x, y)
+		if self.dentro_arena? x, y
+			personagem.x = x
+			personagem.y = y
+			return true
+		end
+
+		false
+	end
+
 end

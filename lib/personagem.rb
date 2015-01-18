@@ -3,9 +3,9 @@ class Personagem
 	def initialize(nome, arma, hp, x, y)
 		@nome = nome
 		@arma = arma
+		@hp = hp
 		@x = x
 		@y = y
-		@hp = hp
 	end
 
 	def atacar(personagem)

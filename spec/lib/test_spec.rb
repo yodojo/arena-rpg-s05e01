@@ -3,7 +3,7 @@ require "arena"
 require "personagem"
 require "arma"
 
-describe "Combate arena" do 
+describe "Combate arena" do
 
 	before do
 		@arena = Arena.new(20, 20)
@@ -13,7 +13,6 @@ describe "Combate arena" do
 	end
 
 	it "Criar a arena 20x20" do
-		# arena = Arena.new(20, 20)
 		expect(@arena.width).to eq(20)
 		expect(@arena.height).to eq(20)
 	end
@@ -43,7 +42,7 @@ describe "Combate arena" do
 		expect(personagem.y).to eq(2)
 	end
 
-	it "Se estao em combate" do
+	it "Se estão em combate" do
 		personagem1 = Personagem.new('Leonidas', @arma_espada, 200, 4, 6)
 		personagem2 = Personagem.new('Hulk', @arma_lanca, 800, 5, 7)
 
@@ -52,28 +51,45 @@ describe "Combate arena" do
 		expect(arena_combate).to be_truthy
 	end
 
-	it "Se nao estao em combate" do
-		armaDoPersonagem1 = Arma.new('Espada', 1, 20)
-		personagem1 = Personagem.new('Leonidas', armaDoPersonagem1, 200, 8, 8)
-		
-		armaDoPersonagem2 = Arma.new('Lança', 3, 15)
-		personagem2 = Personagem.new('Hulk', armaDoPersonagem2, 800, 5, 7)
+	it "Se não estão em combate" do
+		personagem1 = Personagem.new('Leonidas', @arma_espada, 200, 8, 8)
+		personagem2 = Personagem.new('Hulk', @arma_lanca, 800, 5, 7)
 
 		arena_combate = @arena.em_combate?(personagem1, personagem2)
 
 		expect(arena_combate).to be_falsey
 	end
 
-	it "Se estão fora da arena"
+	it "Se estão dentro da arena" do
+		personagem = Personagem.new('Leonidas', @arma_espada, 200, 8, 8)
+		na_arena = @arena.na_arena?(personagem)
 
-	it "Se pode atacar"
+		expect(na_arena).to be_truthy
+	end
 
-	it "Deve mover personagem" do
+	it "Se estão fora da arena" do
+		personagem = Personagem.new('Leonidas', @arma_espada, 200, 20, 21)
+		na_arena = @arena.na_arena?(personagem)
+
+		expect(na_arena).to be_falsey
+	end
+
+	it "Efetuar movimento válido" do
 		personagem = Personagem.new('Leonidas', @arma_espada, 200, 8, 8)
 
-		@arena.mover(personagem, 6, 7)
+		moveu = @arena.mover(personagem, 6, 7)
+		expect(moveu).to be_truthy
 		expect(personagem.x).to eq(6)
 		expect(personagem.y).to eq(7)
+	end
+
+	it "Efetuar movimento inválido" do
+		personagem = Personagem.new('Leonidas', @arma_espada, 200, 8, 8)
+
+		moveu = @arena.mover(personagem, 21, 3)
+		expect(moveu).to be_falsey
+		expect(personagem.x).to eq(8)
+		expect(personagem.y).to eq(8)
 	end
 
 end

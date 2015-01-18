@@ -1,4 +1,4 @@
-# Coding Dojo s05 e01
+# Coding Dojo s05e01 [![Build Status](https://travis-ci.org/gpedro/arena-rpg-s05e01.svg)](https://travis-ci.org/gpedro/arena-rpg-s05e01)
 
 ### Problema: Combate na arena (RPG)
 
@@ -10,21 +10,21 @@ Em uma arena, verificar se personagens presentes na arena estão próximos para 
 
 * Gabriel Pedro
 * Fabian Carlos
-* Braun
+* Leonardo Braun
 * Alison Ribeiro
-* Alvaro
-* Luan (Coringa)
-* Henrique
-* Glayson
+* Alvaro Viebrantz
+* Luan Castro (Coringa)
+* Henrique Ribeiro
+* Glayson Sergio
 * Jonatan Waldow
 * Bruna Gomes
-* Dhyego
+* Dhyego Fernando
 
 ### Prós
 
-* Gnt nova
+* Galera nova
 * Lugar dahora
-* Teve um hangow
+* Teve um rango
 * Todo mundo amou RUBY S2
 * Problema "épico" e divertido
 * Aprendemos um pouco de RPG
@@ -34,9 +34,7 @@ Em uma arena, verificar se personagens presentes na arena estão próximos para 
 * Teclado do mac
 * Faltou mouse
 * Coringa chegou atrasado bagarai
-* Faltou um Cheat Sheets
-* A gnt conseguiu terminar o problam **vaias**
-* Sobrou rangow, faltou gnt pra comer sa parada toda!
+* Faltou um CheatSheets para quem nunca teve contato com Ruby
+* Conseguimos terminar o problema **vaias**
+* Sobrou lanchinho, faltou pessoas pra comerem! (que sirva de incentivo para frequentar dojos)
 * Faltou cerveja
-
-
