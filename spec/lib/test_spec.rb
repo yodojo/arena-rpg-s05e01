@@ -17,6 +17,13 @@ describe "Combate arena" do
 		expect(@arena.height).to eq(20)
 	end
 
+	it "Deve gerar matriz da area 20x20" do
+		matriz = @arena.matriz_area
+
+		expect(matriz[1].size).to eq(20)
+		expect(matriz[20].size).to eq(20)
+	end
+
 	it "Criar arma tipo espada" do
 		expect(@arma_espada.distancia).to eq(1)
 		expect(@arma_espada.dano).to eq(20)

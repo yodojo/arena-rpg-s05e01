@@ -3,8 +3,21 @@ class Arena
 	def initialize(width, height)
 		@width = width
 		@height = height
-		@area = [1..@width][1..@height]
+
 		@personagens = []
+	end
+
+	def matriz_area
+		@area = {}
+		(1..@width).each do |block_horizontal|
+			@area[block_horizontal] = []
+
+			(1..@height).each do |block_vertical|
+				@area[block_horizontal] << { block_horizontal => block_vertical }
+			end
+		end
+
+		@area
 	end
 
 	def em_combate?(personagem_1, personagem_2)
