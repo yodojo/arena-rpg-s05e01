@@ -163,5 +163,13 @@ describe "Combate arena" do
 		expect(personagem.y).to eq(8)
 	end
 
+require 'coordenada'
+	it "dado" do
+		uma = Coordenada.new 4, 4
+		dois = Coordenada.new 4, 4
+
+		expect(uma).to eq(dois)
+	end
+
 end
 
