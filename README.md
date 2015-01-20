@@ -11,7 +11,7 @@ Em uma arena, verificar se personagens presentes na arena estão próximos para 
 * Gabriel Pedro
 * Fabian Carlos
 * Leonardo Braun
-* Alison Ribeiro
+* Álison Ribeiro
 * Alvaro Viebrantz
 * Luan Castro (Coringa)
 * Henrique Ribeiro
