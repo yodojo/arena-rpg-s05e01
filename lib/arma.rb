@@ -1,5 +1,6 @@
 class Arma
-	attr_accessor :nome, :distancia, :dano
+	attr_reader :nome, :distancia, :dano
+	
 	def initialize(nome, distancia, dano)
 		@nome = nome
 		@distancia = distancia
