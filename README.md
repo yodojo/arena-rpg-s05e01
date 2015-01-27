@@ -4,7 +4,33 @@
 
 Em uma arena, verificar se personagens presentes na arena estão próximos para algum combate ou não.
 
-[Tabela de personagens, armas, e teste da arena](https://docs.google.com/spreadsheets/d/19qq8IcsBvChznV8zaWpJvB4qVKU6eGeNJfqM0A8YaGs/edit?usp=sharing)
+### Dados da Arena
+[Veja mais](https://docs.google.com/spreadsheets/d/19qq8IcsBvChznV8zaWpJvB4qVKU6eGeNJfqM0A8YaGs/edit?usp=sharing)
+
+#### Armas
+| Armas  | Distância | Dano |
+|--------|-----------|------|
+| Espada | 1         | 20   |
+| Lança  | 3         | 15   |
+| Flecha | 5         | 10   |
+
+#### Personagens
+| Nome        | HP   | Arma   |
+|-------------|------|--------|
+| Leonidas    | 200  | Espada |
+| Hulk        | 800  |        |
+| Chuck Noris | 1200 |        |
+
+--------
+
+### Forks
+Lista de forks resolvidos em outras linguagens
+
+  * [Elixir](https://github.com/DadoCe/arena_rpg_ex)
+  * [GoLang](https://github.com/alvarowolfx/arena-rpg.go)
+  * [JavaScript](https://github.com/gpedro/arena-rpg.js)
+
+--------
 
 ### Participantes
 
