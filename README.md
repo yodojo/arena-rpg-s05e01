@@ -30,6 +30,7 @@ Lista de forks resolvidos em outras linguagens
   * [GoLang](https://github.com/alvarowolfx/arena-rpg.go)
   * [JavaScript](https://github.com/gpedro/arena-rpg.js)
   * [Java](https://github.com/gpedro/arena-rpg.java)
+  * [Python](https://github.com/Gabriel-Araujo/Arena-RPG)
 
 --------
 
