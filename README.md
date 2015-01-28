@@ -29,6 +29,7 @@ Lista de forks resolvidos em outras linguagens
   * [Elixir](https://github.com/DadoCe/arena_rpg_ex)
   * [GoLang](https://github.com/alvarowolfx/arena-rpg.go)
   * [JavaScript](https://github.com/gpedro/arena-rpg.js)
+  * [Java](https://github.com/gpedro/arena-rpg.java)
 
 --------
 
